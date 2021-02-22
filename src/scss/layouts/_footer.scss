@@ -1,0 +1,109 @@
+.footer{
+    padding: 50px 20px 47px;
+    background: url("https://soft-scale.github.io/P2H-Markup/dist/images/footer-bg.jpg") no-repeat;
+    background-size: cover;
+
+    .centred{
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-block{
+        width: 33.3%;
+        position: relative;
+
+
+        .footer__title{
+            font-size: 35px;
+            line-height: 45px;
+            color: #fff;
+            margin-bottom: 30px;
+            max-width: 275px;
+        }
+        .contact{
+            display: flex;
+            font-size: 20px;
+            color: #f1cdb3;
+            align-items: center;
+            margin-bottom: 33px;
+            .email__text,.phone__text,.location__text{
+                margin-left: 20px;
+                max-width: 260px;
+            }
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+
+        .footer-img{
+            position: absolute;
+            right: 0;
+            bottom: -47px;
+        }
+        
+    }
+}
+
+// --- adaptive
+@media screen and (max-width: 1024px) {
+    .footer {
+        .footer-block {
+            .footer__title{
+                font-size: 24px;
+                line-height: 34px;
+            }
+            .contact{
+                font-size: 17px;
+            }
+            .footer-img{
+                max-width: 230px;
+            }
+        }
+    }
+
+}
+@media screen and (max-width: 900px) {
+    .footer {
+        padding: 40px 20px;
+        
+        .footer-block {
+            width: 50%;
+            
+            .footer-img{
+                bottom: -40px;
+            }
+            &:last-child{
+                width: 40%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    .footer {
+        padding: 40px 20px;
+        
+        .footer-block {
+            width: 50%;
+            
+            &:last-child{
+                display: none;
+            }
+            
+        }
+    }
+}
+@media screen and (max-width: 560px) {
+    .footer {
+        .centred{
+            flex-direction: column;
+            max-width: 280px;
+        }        
+        .footer-block {
+            width: 100%;
+            margin-bottom: 40px;
+            
+            &:nth-child(2){
+                margin-bottom: 0;
+            }
+        }
+    }
+}
