@@ -1,13 +1,13 @@
 /*--------------------------------------------------------------
 # Common styles
 --------------------------------------------------------------*/
-@import "common/fonts"; 
+@import "common/variables"; 
 @import "common/base"; 
 
 
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
-@import "layouts/header"; 
-@import "layouts/content";
-@import "layouts/footer";
+@import "blocks/header"; 
+@import "blocks/content";
+@import "blocks/footer";

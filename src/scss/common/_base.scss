@@ -50,8 +50,9 @@ html,body{
 }
 body{
     font-family: 'Georgia', serif;
-    background: #fff;
+    background: $body-bg;
     overflow-x: hidden;
+    color: $base;
 }
 ul, li{
     list-style: none;
@@ -76,8 +77,8 @@ img{
     justify-content: space-between;
 }
 .title{    
-    font-size: 35px;
+    font-size: $fz-big;
     font-weight: normal;
     line-height: 45px;
-    color: #545454;    
+    color: $base;    
 }
